@@ -1,3 +1,10 @@
+.navbar {
+    background-color: #EDEBEC !important;
+}
+
+.btn-primary {
+    background-color: #64B4B5 !important;
+}
 
 @media (max-width: 991px) {
     .navbar-scroll {
