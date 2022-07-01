@@ -1,0 +1,68 @@
+<html>
+    <style>
+        @page {
+            size: a4 portrait;
+            @frame header_frame {           /* Static frame */
+                -pdf-frame-content: header_content;
+                left: 50pt; width: 512pt; top: 50pt; height: 40pt;
+            }
+            @frame profile_1_frame {             
+                left: 44pt; width: 245pt; top: 90pt; height: 150pt;
+                
+                -pdf-frame-content: profile_1
+            }
+            @frame profile_2_frame {            
+                left: 323pt; width: 245pt; top: 90pt; height:150pt;
+                
+                -pdf-frame-content: profile_2
+            }
+            @frame overflow_frame {            
+                left: 44pt; width: 245pt; top: 250pt; height:150pt;
+                
+            }
+            @frame footer_frame {           /* Static frame */
+                -pdf-frame-content: footer_content;
+                left: 50pt; width: 512pt; top: 772pt; height: 20pt;
+            }
+        }
+        .column {
+            background-image: url("profile_pic.jpg");
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        pre,
+        hr {
+            margin:0 0;
+        }
+    </style>
+    <body>
+        <div class="row">
+            <div class="column" id="profile_1">
+              <h2>Johanna Wulf</h2>
+              <p>Apartment No. 1</p>
+              <h6>Hobbies:</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
+            </div>
+            
+            <div class="column" id="profile_2">
+              <h2>Column</h2>
+              <p>2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="column">
+              <h2>Column</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            </div>
+        
+        </div>
+          
+            
+    </body>
+</html>
